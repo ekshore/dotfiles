@@ -1,0 +1,7 @@
+[user]
+	name = Caleb Ekstrand
+	email = ekstrand.caleb@ekshore.net
+[core]
+	editor = nvim
+[init]
+	defaultBranch = main
