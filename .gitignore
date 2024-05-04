@@ -1,0 +1,5 @@
+iterm2/
+nvim/ftplugin/
+pip/
+.config/tmux/plugins
+neofetch/
