@@ -42,3 +42,7 @@ alias cd="z"
 
 # Eza alias
 alias ls="eza"
+
+alias lg="lazygit"
+
+alias refreshz="source ~/.zshrc"
