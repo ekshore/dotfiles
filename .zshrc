@@ -35,3 +35,10 @@ bindkey '^[[B' history-search-forward
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# Zoxide config
+eval "$(zoxide init zsh)"
+alias cd="z"
+
+# Eza alias
+alias ls="eza"
