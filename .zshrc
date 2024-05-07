@@ -4,15 +4,20 @@
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
+
+# Homebrew
+eval "$(/opt/homebrew/bin/brew)"
+
 # Power level 10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 
 plugins=(git)
 
+# Jenv
+if which jenv > /dev/null; then eval "$(jenv init -)" fi
+# Pyenv
+if which pyenv > /dev/null; then eval "$(pyenv init -)" fi
 
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
