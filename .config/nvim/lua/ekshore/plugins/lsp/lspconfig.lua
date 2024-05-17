@@ -3,10 +3,8 @@ return {
     event = { 'BufReadPre', 'BufNewFile' },
     dependencies = {
         'hrsh7th/cmp-nvim-lsp',
-        'j-hui/fidget.nvim',
     },
     config = function()
-        require('fidget').setup()
         local lspconfig = require('lspconfig')
         local cmp_nvim_lsp = require('cmp_nvim_lsp')
 
