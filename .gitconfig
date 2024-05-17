@@ -1,6 +1,6 @@
 [user]
-	name = Caleb Ekstrand
-	email = ekstrand.caleb@ekshore.net
+	name = <Your name>
+	email = <Your Email>
 [core]
 	editor = nvim
 [init]
