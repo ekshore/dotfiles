@@ -18,11 +18,11 @@ If you are using a linux box you'll have to convert these to be your package man
 ### Zsh
 Going to assume this is installed if not look it up, it's default on MacOS
 
-### Allacrity
+### Alacritty
 This is optional but I like using allacrity as my terminal emulator.
 
 ```shell
-brew install --cask allacrity
+brew install --cask alacritty
 ```
 
 ### Nerd Fonts
