@@ -54,6 +54,11 @@ This should be installed by default but if it's not install it.
 brew install git
 ```
 
+### GNU Stow
+```shell
+brew install stow
+```
+
 ### Zsh nicities
 These are somethings that I have to make zsh a little nicer.
 All of these can be managed via proper plugin managers however I've just installed them and added them to .zshrc
@@ -86,4 +91,12 @@ brew install eza
 I nice tui git client
 ```shell
 brew install lazygit
+```
+
+## GNU Stow
+GNU Stow sym links everyting in the target directory into it's parent directory.
+Allowing you to have all of your managed dotfiles in one git controlled directory but also where they need to be.
+After installing GNU stow run the following command inside of this repo's directory to symlink everything into your home directory
+```shell
+stow .
 ```
