@@ -4,7 +4,7 @@
 This repository is meant to be cloned into your home directory and then symlink all of the dot files into their proper place via GNU Stow.
 
 Things configured in this set up
-- Allacrity
+- Alacritty
 - zsh
 - p10k
 - Tmux
