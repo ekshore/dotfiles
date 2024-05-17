@@ -6,7 +6,7 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 # Homebrew
-eval "$(/opt/homebrew/bin/brew)"
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Power level 10k
 source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
@@ -14,9 +14,9 @@ source $(brew --prefix)/share/powerlevel10k/powerlevel10k.zsh-theme
 plugins=(git)
 
 # Jenv
-if which jenv > /dev/null; then eval "$(jenv init -)" fi
+# if which jenv > /dev/null; then eval "$(jenv init -)" fi
 # Pyenv
-if which pyenv > /dev/null; then eval "$(pyenv init -)" fi
+# if which pyenv > /dev/null; then eval "$(pyenv init -)" fi
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
