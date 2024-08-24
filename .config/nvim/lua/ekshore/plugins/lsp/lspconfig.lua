@@ -110,6 +110,12 @@ return {
             on_attach = on_attach,
         })
 
+        -- configure toml language server
+        lspconfig['taplo'].setup({
+            capabilities = capabilities,
+            on_attach = on_attach,
+        })
+
         -- configure typescript server
         lspconfig['tsserver'].setup({
             capabilities = capabilities,
