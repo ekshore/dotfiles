@@ -28,6 +28,7 @@ vim.keymap.set('i', 'jk', '<Esc>')
 -- Switching between projects, not sure how much I'll use this
 vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
 vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
+vim.keymap.set('v', '<leader>f', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>gp', '<cmd>silent %!prettier --stdin-filepath %<CR>')
 
 vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
