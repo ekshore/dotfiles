@@ -85,15 +85,15 @@ return {
             settings = {
                 ['rust-analyzer'] = {
                     -- cargo = {
-                    --     features = { 'ssr' },
+                    --     features = { 'ssr', 'hydrate' },
                     -- },
-                    procMacro = {
-                        ignored = {
-                            leptos_macros = {
-                                "server",
-                            }
-                        }
-                    }
+                    -- procMacro = {
+                    --     ignored = {
+                    --         leptos_macros = {
+                    --             "server",
+                    --         }
+                    --     }
+                    -- }
                 }
             }
         })
@@ -117,7 +117,7 @@ return {
         })
 
         -- configure typescript server
-        lspconfig['tsserver'].setup({
+        lspconfig['ts_ls'].setup({
             capabilities = capabilities,
             on_attach = on_attach,
         })
