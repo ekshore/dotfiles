@@ -1,6 +1,12 @@
+[ssh]
+    variant = ssh
 [user]
 	name = Caleb Ekstrand
 	email = ekstrand.caleb@ekshore.net
+[pull]
+    rebase = true
+[push]
+    autoSetupRemote = true
 [core]
 	editor = nvim
 [init]
