@@ -65,7 +65,6 @@ return {
 
         local capabilities = cmp_nvim_lsp.default_capabilities()
 
-        -- local icons = { Error = 'E', Warn = 'W', Hint = 'H', Info = 'I' }
         local icons = { Error = ' ', Warn = ' ', Hint = '󰠠 ', Info = ' ' }
         for type, icon in pairs(icons) do
             local hl = 'DiagnosticSign' .. type
