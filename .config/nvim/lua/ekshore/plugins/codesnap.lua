@@ -10,7 +10,8 @@ return {
         editor_font_family = 'Hack Nerd Font Mono',
         has_breadcrumbs = true,
         has_line_number = true,
-        bg_padding = 0, 
+        bg_padding = 0,
+        save_path = '~/Pictures/CodeSnap'
     },
     config = function(_, opts)
         require('codesnap').setup(opts)
