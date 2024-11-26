@@ -65,7 +65,7 @@ if.app-id = 'com.apple.finder'
 run = 'layout floating'
 
 [[on-window-detected]]
-if.app-id = 'com.techsmith.snagit'
+if.app-id = 'com.TechSmith.Snagit2023'
 run = 'layout floating'
 
 # 'main' binding mode declaration

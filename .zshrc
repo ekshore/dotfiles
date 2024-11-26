@@ -55,3 +55,5 @@ alias refreshz="source ~/.zshrc"
 
 # Created by `pipx` on 2024-05-30 20:18:03
 export PATH="$PATH:/Users/ekshore/.local/bin"
+
+source ./zshenv
