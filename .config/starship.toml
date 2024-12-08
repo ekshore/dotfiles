@@ -1,0 +1,58 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Use custom format
+# format = """$character"""
+format = '''
+[╭─](bold black) $os [ $directory](bold blue)$package$aws$fill $rust$bun$nodejs$java$cmd_duration$time
+[╰─](bold black)$character'''
+# [│](bold black)$rust$package
+
+[aws]
+disabled = true
+format = "[$symbol($profile )(\\($region\\) )(\\[$duration\\] )]($style)"
+symbol ="☁️ "
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+success_symbol = '[❯](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+error_symbol = '[❯](bold red)'
+
+[cmd_duration]
+format ="[ $duration]($style) "
+
+[directory]
+style = 'bold blue'
+truncation_length = 8
+truncation_symbol = '…/'
+
+[fill]
+style = 'bold black'
+symbol = '·'
+
+[nodejs]
+format = '[$symbol($version )]($style)'
+
+[os]
+disabled = false
+[os.symbols]
+Macos = ''
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = false
+format ="[$symbol $version]($style) "
+symbol = ''
+
+[rust]
+format = '[$symbol ($version )]($style)'
+symbol = '󱘗'
+
+[time]
+disabled = false
+format = '[ $time]($style)'
+style = 'bold green'
+
