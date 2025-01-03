@@ -8,9 +8,6 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # History
 HISTFILE=$HOME/.zsh_history
 SAVEHIST=1000
