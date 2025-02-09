@@ -1,0 +1,12 @@
+background-blur = true
+background-opacity = 0.8
+cursor-style = block
+cursor-style-blink = false
+font-family = Hack Nerd Font Mono Bold
+font-feature = -calt
+font-size = 15
+macos-titlebar-style = hidden
+shell-integration-features = no-cursor
+theme = GruvboxDark
+window-padding-x = 10
+window-padding-y = 10
