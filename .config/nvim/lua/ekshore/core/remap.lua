@@ -27,8 +27,8 @@ vim.keymap.set('i', 'jk', '<Esc>')
 
 -- Switching between projects, not sure how much I'll use this
 vim.keymap.set('n', '<C-f>', '<cmd>silent !tmux neww tmux-sessionizer<CR>')
-vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
-vim.keymap.set('v', '<leader>f', vim.lsp.buf.format)
+-- vim.keymap.set('n', '<leader>f', vim.lsp.buf.format)
+-- vim.keymap.set('v', '<leader>f', vim.lsp.buf.format)
 vim.keymap.set('n', '<leader>gp', '<cmd>silent %!prettier --stdin-filepath %<CR>')
 
 vim.keymap.set('n', '<C-k>', '<cmd>cnext<CR>zz')
@@ -37,4 +37,7 @@ vim.keymap.set('n', '<leader>k', '<cmd>lnext<CR>zz')
 vim.keymap.set('n', '<leader>j', '<cmd>lprev<CR>zz')
 
 vim.keymap.set('n', '<leader>s', [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
-vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+vim.keymap.set('n', '<leader>x', '<cmd>!chmod +x %<CR>', { silent = true })
+
+-- Tailwind sort
+vim.keymap.set('n', '<leader>tw', ':TailwindSort <CR>')

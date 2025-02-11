@@ -79,7 +79,8 @@ return {
             capabilities = capabilities,
             on_attach = on_attach,
             cmd = {
-                'rustup', 'run', 'stable', 'rust-analyzer'
+                -- 'rustup', 'run', 'stable', 'rust-analyzer'
+                'rustup', 'run', 'nightly', 'rust-analyzer'
             },
             settings = {
                 ['rust-analyzer'] = {

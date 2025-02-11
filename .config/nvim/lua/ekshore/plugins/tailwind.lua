@@ -26,5 +26,5 @@ return {
                 -- javascript = { "clsx%(([^)]+)%)" },
             },
         },
-    } -- your configuration
+    }, -- your configuration
 }

@@ -7,8 +7,8 @@ add_newline = true
 # Use custom format
 # format = """$character"""
 format = '''
-[╭─](bold black) $os [ $directory](bold blue)$package$aws$fill $rust$bun$nodejs$java$cmd_duration$time
-[╰─](bold black)$character'''
+[╭─](bold bright-black) $os [  $directory](bold blue)$package$aws$fill $rust$bun$nodejs$java$cmd_duration$time
+[╰─](bold bright-black)$character'''
 # [│](bold black)$rust$package
 
 [aws]
@@ -30,7 +30,7 @@ truncation_length = 8
 truncation_symbol = '…/'
 
 [fill]
-style = 'bold black'
+style = 'bold bright-black'
 symbol = '·'
 
 [java]
@@ -43,7 +43,7 @@ format = '[$symbol($version )]($style)'
 [os]
 disabled = false
 [os.symbols]
-Macos = ''
+Macos = ' (bright-black)'
 
 # Disable the package module, hiding it from the prompt completely
 [package]
