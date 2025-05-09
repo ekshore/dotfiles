@@ -3,3 +3,4 @@ nvim/ftplugin/
 pip/
 .config/tmux/plugins
 neofetch/
+.config/containers
