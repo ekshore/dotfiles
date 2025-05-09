@@ -18,11 +18,11 @@ If you are using a linux box you'll have to convert these to be your package man
 ### Zsh
 Going to assume this is installed if not look it up, it's default on MacOS
 
-### Alacritty
+### Ghostty
 This is optional but I like using allacrity as my terminal emulator.
 
 ```shell
-brew install --cask alacritty
+brew install --cask ghostty
 ```
 
 ### Nerd Fonts
@@ -30,11 +30,11 @@ brew install --cask alacritty
 brew install font-hack-nerd-font
 ```
 
-### Power Level 10 K
-There are several ways that you can install this however I've opted to do it through HomeBrew
+### Starship
+I've opted to replace `ohmyzsh` / `powerlevel10k` with starship. Powerlevel10k has been discontinued and I don't want to add the overhead of ohmyzsh.
 
 ```shell
-brew install powerlevel10k
+brew install starship
 ```
 ### TMUX
 
@@ -52,6 +52,13 @@ This should be installed by default but if it's not install it.
 
 ```shell
 brew install git
+```
+
+### AeroSpace
+AeroSpace is a tiling window manager for MacOS based on i3. I like it for improving my work flow.
+
+```shell
+brew install --cask nikitabobko/tap/aerospace
 ```
 
 ### GNU Stow
