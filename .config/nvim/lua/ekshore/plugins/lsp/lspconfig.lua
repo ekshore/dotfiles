@@ -5,7 +5,6 @@ return {
         'hrsh7th/cmp-nvim-lsp',
     },
     config = function()
-        local lspconfig = require('lspconfig')
         local cmp_nvim_lsp = require('cmp_nvim_lsp')
 
         local keymap = vim.keymap
@@ -75,7 +74,7 @@ return {
         ----------------------------
 
         -- configure rust analyzer
-        lspconfig['rust_analyzer'].setup({
+        vim.lsp.config('rust_analyzer', {
             capabilities = capabilities,
             on_attach = on_attach,
             cmd = {
@@ -97,51 +96,59 @@ return {
                 }
             }
         })
+        vim.lsp.enable('rust_analyzer')
 
         -- configure Dockerfile language server
-        lspconfig['dockerls'].setup({
+        vim.lsp.config('dockerls', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('dockerls')
 
         -- configure json server
-        lspconfig['jsonls'].setup({
+        vim.lsp.config('jsonls', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('jsonls')
 
         -- configure toml language server
-        lspconfig['taplo'].setup({
+        vim.lsp.config('taplo', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('taplo')
 
         -- configure typescript server
-        lspconfig['ts_ls'].setup({
+        vim.lsp.config('ts_ls', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('ts_ls')
 
         -- configure html
-        lspconfig['html'].setup({
+        vim.lsp.config('html', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('html')
 
         -- configure css server
-        lspconfig['cssls'].setup({
+        vim.lsp.config('cssls', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('cssls')
 
         -- configure tailwindcss
-        lspconfig['tailwindcss'].setup({
+        vim.lsp.config('tailwindcss', {
             capabilities = capabilities,
             on_attach = on_attach,
         })
+        vim.lsp.enable('tailwindcss')
 
         -- configure lua server
-        lspconfig["lua_ls"].setup({
+        vim.lsp.config("lua_ls", {
             capabilities = capabilities,
             on_attach = on_attach,
             settings = { -- custom settings for lua
@@ -160,5 +167,6 @@ return {
                 },
             },
         })
+        vim.lsp.enable('lua_ls')
     end,
 }
