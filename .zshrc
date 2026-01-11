@@ -33,6 +33,7 @@ alias cd="z"
 
 # Eza alias
 alias ls="eza"
+alias ll="eza -l --group-directories-first --icons"
 
 alias lg="lazygit"
 
