@@ -141,11 +141,11 @@ return {
         vim.lsp.enable('cssls')
 
         -- configure tailwindcss
-        vim.lsp.config('tailwindcss', {
-            capabilities = capabilities,
-            on_attach = on_attach,
-        })
-        vim.lsp.enable('tailwindcss')
+        -- vim.lsp.config('tailwindcss', {
+        --     capabilities = capabilities,
+        --     on_attach = on_attach,
+        -- })
+        -- vim.lsp.enable('tailwindcss')
 
         -- configure lua server
         vim.lsp.config("lua_ls", {
