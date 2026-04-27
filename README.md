@@ -4,9 +4,10 @@
 This repository is meant to be cloned into your home directory and then symlink all of the dot files into their proper place via GNU Stow.
 
 Things configured in this set up
-- Alacritty
+- AeroSpace
+- Ghostty
 - zsh
-- p10k
+- Starship
 - Tmux
 - Nvim
 - Some of git
