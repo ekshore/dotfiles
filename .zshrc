@@ -27,10 +27,6 @@ bindkey '^[[Z' autosuggest-accept
 # Highlighting
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-# Zoxide config
-eval "$(zoxide init zsh)"
-alias cd="z"
-
 # Eza alias
 alias ls="eza"
 alias ll="eza -l --group-directories-first --icons"
@@ -45,3 +41,7 @@ export PATH="$PATH:/Users/ekshore/.local/bin"
 source ~/.zshenv
 
 eval "$(starship init zsh)"
+
+# Zoxide config
+alias cd="z"
+eval "$(zoxide init zsh)"
