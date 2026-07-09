@@ -1,9 +1,9 @@
 # Homebrew
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Jenv
+# Jenv :: Work Config
 # if which jenv > /dev/null; then eval "$(jenv init -)" fi
-# Pyenv
+# Pyenv :: Work Config
 # if which pyenv > /dev/null; then eval "$(pyenv init -)" fi
 
 export PATH="/opt/homebrew/opt/openjdk/bin:$PATH"

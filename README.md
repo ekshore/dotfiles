@@ -20,7 +20,7 @@ If you are using a linux box you'll have to convert these to be your package man
 Going to assume this is installed if not look it up, it's default on MacOS
 
 ### Ghostty
-This is optional but I like using allacrity as my terminal emulator.
+This is optional but I like using Ghostty as my terminal emulator.
 
 ```shell
 brew install --cask ghostty
@@ -67,7 +67,7 @@ brew install --cask nikitabobko/tap/aerospace
 brew install stow
 ```
 
-### Zsh nicities
+### Zsh niceties
 These are somethings that I have to make zsh a little nicer.
 All of these can be managed via proper plugin managers however I've just installed them and added them to .zshrc
 
@@ -102,7 +102,7 @@ brew install lazygit
 ```
 
 ## GNU Stow
-GNU Stow sym links everyting in the target directory into it's parent directory.
+GNU Stow sym links everything in the target directory into it's parent directory.
 Allowing you to have all of your managed dotfiles in one git controlled directory but also where they need to be.
 After installing GNU stow run the following command inside of this repo's directory to symlink everything into your home directory
 ```shell
